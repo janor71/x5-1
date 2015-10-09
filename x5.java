@@ -1,9 +1,9 @@
-//// X5:  collisions.  bam59cst112day/x5
+//// X5:  collisions.  /x5
 //// (Assume ball diameter of 30.)
 
 //// GLOBALS:  pool table, 3 colored balls
 
-String title=  "ELASTIC COLLISIONS  (x5day.java)";
+String title=  "ELASTIC COLLISIONS  (x5.java)";
 String news=   "Use 'r' key to reset.";
 String author=  "Your Name";
 
