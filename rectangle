@@ -1,0 +1,59 @@
+/**
+ * {Program to create Rectangle object
+ * 
+ * Rebeca Janowicz
+ * 2/1/2016
+ */
+public class Rectangle
+
+{
+    public static void main(String[] args){ // if i want to add another object do it inside this {}
+        // creating and object MyRectangle
+        MyRectangle myRectangle = new MyRectangle(4, 40); // w and h info
+        System.out.println("The area of the rectangle with width " + 
+         myRectangle.width + " and height  " + 
+         myRectangle.height + " is " + 
+         myRectangle.getArea());
+        System.out.println("The perimeter of rectangle is " + 
+         myRectangle.getPerimeter());
+         
+         
+        MyRectangle yourRectangle = new MyRectangle(3.5, 35.9); // w and h info
+        System.out.println("The area of the rectangle with width " + 
+         yourRectangle.width + " and height  " + 
+         yourRectangle.height + " is " + 
+         yourRectangle.getArea());
+        System.out.println("The perimeter of rectangle is " + 
+         myRectangle.getPerimeter());
+       
+    }
+}
+
+ class  MyRectangle {
+// data members 
+double width  = 1, height = 1;
+
+// Constructor 
+public MyRectangle (){
+  
+}
+
+// Constructor 
+
+public MyRectangle(double newWidth, double newHeight) {
+    width = newWidth;
+    height= newHeight; // global variables 
+    
+
+}
+// Area Method 
+ public  double getArea () {
+    return width * height;
+ }
+    // Perimeter Method 
+    public  double getPerimeter  () {
+    return 2*(width +height);
+
+ } 
+}       
+        
