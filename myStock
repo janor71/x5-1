@@ -1,0 +1,60 @@
+**
+ * Project 1
+ * Program to create a Stock 
+ * 
+ * class Stock1 
+ * 
+ * Student Rebeca Janowicz
+ * date 2/8/16 
+ */
+
+ class MyStock1 {  
+    // instance variables
+    private double previousClosingPrice; // Previous Price
+    private double currentPrice;         // Current Price
+    
+   /**My Stock constructors  initializes the stocks prices and 
+    * takes 2 parameters of previous and current price
+    */
+    public MyStock1() { 
+        previousClosingPrice = 34.5;
+        currentPrice = 34.35;
+    }
+    /**
+    // Second constructor 
+    */
+    public MyStock1(double newPreviousClosingPrice, double newCurrentPrice) {
+    
+        previousClosingPrice = newPreviousClosingPrice;
+        currentPrice = newCurrentPrice;
+    }
+    
+    /** Mutator method that obtains the value of the prices 
+     * and evaluates them to make sure they are greater than 0
+     */
+       public void setPreviousclosingPrice(double newPreviousClosingPrice) {
+         previousClosingPrice += 0;
+         if (  previousClosingPrice > 0 ) {
+            previousClosingPrice = (newPreviousClosingPrice >=0) ? newPreviousClosingPrice : 0;
+          }
+    }
+    //public double  getpreviousClosingPrice(){    un
+     //     return previousClosingPrice;   
+   //  }
+    public void setCurrentPrice(double newCurrentPrice) {
+        currentPrice += 0; 
+        if (currentPrice > 0); {
+         currentPrice = (newCurrentPrice >=0) ? newCurrentPrice : 0;
+        }
+    }
+    //public double  getcurrentPrice(){
+       //  return currentPrice;
+    //  }
+    /** evaluates the change percentage between both prices 
+     * substracting previous and current prices 
+     * and divides it by previous value
+     */       
+      public double getChangePercentage() {
+    return (previousClosingPrice - currentPrice) / (previousClosingPrice);
+    }
+ }
