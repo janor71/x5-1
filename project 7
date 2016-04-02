@@ -1,4 +1,4 @@
-
+import java.util.InputMismatchException;
 /**
  * The Employee class definition which manages the salesperson, Excecutive and salary fiels 
  * 
@@ -23,7 +23,7 @@ public abstract class Employee extends Object
      * address and salary  
      * */
      
-        public Employee() {
+        public Employee() throws Exception { 
             this ("", "", 0);
             //this.address = address;
            // this. salary = salary;   
@@ -33,7 +33,7 @@ public abstract class Employee extends Object
      * address and salary
         
       */
-          public Employee(String name, String address, double salary ) {
+          public Employee(String name, String address, double salary ) throws Exception {
            setName(name);
            setAddress(address);
            setSalary(salary);
@@ -52,12 +52,16 @@ public abstract class Employee extends Object
     }
     /**   sets the value for the employee's salary 
      */
-       public void setSalary(double salary) {
+       public void setSalary(double salary) throws Exception {
       //  this.salary = salary;
-        if (sales > 0.0)
+        if (sales > 0 && sales < 25 
+        || sales > 25 && sales < 50 
+        || sales > 50 && sales < 75 
+        || sales > 75 )
+        { 
+        throw new Exception("Invalid data");
+    }  
         this.sales = sales;
-        
-        ////////////
     }
     /** Returns emmployee's name
      */
@@ -72,5 +76,8 @@ public abstract class Employee extends Object
     public double getSalary() {
         return salary;
     }
+    public abstract double getAdditionalIncome();
+
+   //  public double getTotalSalary();
     
 }
