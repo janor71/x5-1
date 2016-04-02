@@ -1,0 +1,76 @@
+
+/**
+ * The Employee class definition which manages the salesperson, Excecutive and salary fiels 
+ * 
+ * Rebeca Janowicz 
+ * 4-4-16
+ */
+public abstract class Employee extends Object
+{
+    private String name; // The employee's first name
+    private String address;   // The employee's address
+    private double salary;       // The emplyee's salary
+    private int sales;
+    
+    public static void main(String[] args) {
+        //EmployeeObject empobject1 = new Salesperson();
+       // EmployeeObject empobject2 = new Executive();
+        
+    }
+        
+   
+    /** No argument constructor sets fields employee's name
+     * address and salary  
+     * */
+     
+        public Employee() {
+            this ("", "", 0);
+            //this.address = address;
+           // this. salary = salary;   
+        }
+    
+    /** sets initial values for employee's name
+     * address and salary
+        
+      */
+          public Employee(String name, String address, double salary ) {
+           setName(name);
+           setAddress(address);
+           setSalary(salary);
+        }
+        
+      /** sets the value for the employee's name field
+     **/
+         public void setName(String name) {
+        this.name = name;
+    }
+    
+     /** sets the value for the employee's address field
+     * */
+       public void setAddress(String Address) {
+        this.address = address;
+    }
+    /**   sets the value for the employee's salary 
+     */
+       public void setSalary(double salary) {
+      //  this.salary = salary;
+        if (sales > 0.0)
+        this.sales = sales;
+        
+        ////////////
+    }
+    /** Returns emmployee's name
+     */
+    public String getName() {
+        return name;
+    }
+     /** Returns emmployee's address
+     */
+    public String getAddress() {
+        return address;
+    }
+    public double getSalary() {
+        return salary;
+    }
+    
+}
