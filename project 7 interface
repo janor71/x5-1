@@ -1,10 +1,12 @@
-
 /**
  * Write a description of interface SalaryConstants here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public interface SalaryConstants
-{
+public interface SalaryConstants {
+    int getSalaryConstants ();
+    double COMMISION_RATE = 0.15;
+    double BONUS_RATE = 0.40;
+    
 }
